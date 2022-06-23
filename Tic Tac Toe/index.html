@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    <style>
+        #Heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 44px;
+            color: rgb(112, 17, 189);
+            background-color: #d4d7d8;
+            text-shadow: 2px 3px 3px rgb(32, 29, 29);
+            box-shadow: 7px 8px 9px gray;
+            height: 5rem;
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            /* border: 2px solid #000; */
+            height: 20rem;
+            width: 20rem;
+            margin: 5rem auto;
+            /* box-shadow: 5px 10px 10px gray; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 5px;
+        }
+
+        .item {
+            background-color: #fabca9;
+            box-shadow: 5px 6px 6px gray;
+            margin: 3px 3px;
+            border: 2px solid #fabca9;
+            border-radius: 5px;
+            font-family: 'Anton', sans-serif;
+            font-size: 35px;
+            color: rgb(172, 94, 30);
+        }
+    </style>
+</head>
+<body>
+    <header id="Heading">Tic Tac Toe!</header>
+
+    <div class="container">
+        <button id="item-1" class="item"></button>
+        <button id="item-2" class="item"></button>
+        <button id="item-3" class="item"></button>
+        <button id="item-4" class="item"></button>
+        <button id="item-5" class="item"></button>
+        <button id="item-6" class="item"></button>
+        <button id="item-7" class="item"></button>
+        <button id="item-8" class="item"></button>
+        <button id="item-9" class="item"></button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
